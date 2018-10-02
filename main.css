@@ -4,7 +4,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 150px;
-  background: linear-gradient(#e66465, #9198e5);
+  background: radial-gradient(circle, #e66465, #eec1f2, #6971c6/*9198e5*/);
 }
 
 h1 {
