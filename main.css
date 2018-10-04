@@ -35,6 +35,15 @@ input {
   margin-top: 10px;
 }
 
+.resultSection {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-family: "Courier New", fantasy;
+}
+
 .pictures {
   margin-top: 20px;
 }
