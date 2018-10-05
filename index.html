@@ -9,7 +9,8 @@
     <div class="pictures">
       <img src="galaxy2.png" alt="Galaxy Unicorn" style ="width:200px; height:200px;">
     </div>
-    <h1>Help me choose between...</h1>
+    <h1 class="startHeader">Help me choose between...</h1>
+    <h1 class="resultHeader">You choose: </h1>
     <div class ="inputSection">
       <div class ="inputs">
         <input placeholder="Something"></input>
@@ -21,8 +22,9 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
       $(function() {
-      /*  $('input').val('')*/
+        $('input').val('')
         $('.resultSection').hide()
+        $('.resultHeader').hide()
 
         var add_option = function() {
           $('.inputs').append('<input></input>')
@@ -33,8 +35,10 @@
         var options = []
         var submit = function() {
           $('.inputSection').hide()
+          $('.startHeader').hide()
           $('.resultSection').css('display', 'flex')
-          $('input').each(function(){
+          $('.resultHeader').css('display', 'flex')
+          $('input').each(function( ){
             options.push($(this).val())
           })
           var winner = options[Math.floor(Math.random() * options.length)]
